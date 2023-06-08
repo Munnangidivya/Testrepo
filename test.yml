@@ -1,0 +1,21 @@
+
+trigger:
+ -master
+pool: 
+ vmImage: 'Ubuntu-latest'
+variables:
+ -
+stages:
+ -stage:Build
+  jobs:
+   -job:
+     steps:
+      -task:
+       displayName:
+        inputs:
+ -stage:Release
+  jobs:
+   -job:
+    steps:
+     -task:
+     inputs:
